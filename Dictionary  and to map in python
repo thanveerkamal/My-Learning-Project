@@ -1,0 +1,13 @@
+n = int(input('number of entries:'))
+PB={}
+
+for i in range(n):
+    a = input('Enter Name and space sepereated Number:').strip().split()
+    PB[a[0]] = a[1]
+    
+for j in range(n):
+    b = input('Enter Query:').strip()
+    if b in PB:
+        print(f'{b}={PB[b]}')
+    else:
+        print('Not found')    
